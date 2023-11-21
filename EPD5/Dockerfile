@@ -6,8 +6,7 @@ RUN apt-get update && \
     apt-get install -y openjdk-8-jdk
 
 # Instala Tomcat 8
-RUN apt-get update && \ 
-    apt-get install -y tomcat
+RUN apt-get install -y tomcat
 
 # Descarga la última versión de Jenkins en formato war
 RUN wget -O /usr/local/tomcat/webapps/jenkins.war https://updates.jenkins.io/latest/jenkins.war
