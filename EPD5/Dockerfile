@@ -10,8 +10,8 @@ RUN apt-get install -y tomcat9
 
 # Descarga la última versión de Jenkins en formato war
 
-RUN apt-get install wget && \
-    wget -O /usr/local/tomcat/webapps/jenkins.war https://updates.jenkins.io/latest/jenkins.war
+RUN apt-get install -y wget 
+RUN wget -O /usr/local/tomcat/webapps/jenkins.war https://updates.jenkins.io/latest/jenkins.war
 
 # Expone el puerto 8080 de Tomcat
 EXPOSE 8080
