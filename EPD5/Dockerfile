@@ -18,5 +18,5 @@ RUN wget -O /usr/local/tomcat/webapps/jenkins.war https://updates.jenkins.io/lat
 EXPOSE 8080
 
 # Define el comando para iniciar Tomcat al arrancar el contenedor
-CMD service tomcat9 start && tail -f /var/log/tomcat8/catalina.out
+CMD service tomcat9 start && tail -f /var/log/tomcat9/catalina.out
 
